@@ -15,7 +15,7 @@ for i in desc:
 		print("Welcome, User#"+str(len(known_faces)-1))
 		continue
 	kk = numpy.argmin(dist)
-	if dist[kk] < 0.4:
+	if dist[kk] < 0.6:
 		print("Hello again, User#"+str(kk))
 	else:
 		known_faces.append(i)
